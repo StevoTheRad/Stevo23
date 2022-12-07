@@ -6,16 +6,16 @@ import ru.netology.radio.Radio;
 
 public class RadioTest {
 
-   @Test
-   public void stationsAmountTest() {
-       Radio radio = new Radio((byte) 10);
-       Assertions.assertEquals(10, radio.getStationsAmount());
-   }
+    @Test
+    public void stationsAmountTest() {
+        Radio radio = new Radio((byte) 10);
+        Assertions.assertEquals(10, radio.getStationsAmount());
+    }
 
     @Test
     public void stationsAmountTest2() {
         Radio radio = new Radio();
-        Assertions.assertEquals(10,radio.getStationsAmount());
+        Assertions.assertEquals(10, radio.getStationsAmount());
     }
 
     @Test

@@ -26,6 +26,7 @@ public class Radio {
     public byte getStationsAmount() {
         return stationsAmount;
     }
+
     public byte getCurrentStation() {
         return currentStation;
     }
