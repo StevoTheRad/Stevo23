@@ -13,7 +13,6 @@ public class Radio {
         return currentVolume;
     }
 
-
     public void setCurrentStation(byte newCurrentStation) {
         if (newCurrentStation < 0) {
             return;
@@ -55,11 +54,11 @@ public class Radio {
         currentVolume = newCurrentVolume;
     }
 
-    public void increaseVolume() {
+    public byte increaseVolume() {
         if (currentVolume < 10) {
             currentVolume = (byte) (currentVolume + 1);
         }
-
+        return currentVolume;
     }
 
     public byte reduceVolume() {
