@@ -6,7 +6,7 @@ public class Radio {
     private byte stationsAmount = 10;
     private byte currentStation;
     private byte minVolume = 0;
-    private byte maxVolume = 100;
+    private byte maxVolume = 10;
     private byte currentVolume = minVolume;
 
     public Radio() {
