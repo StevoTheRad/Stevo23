@@ -17,22 +17,20 @@ public class Radio {
     }
 
     public byte next() {
-        if (currentStation <= 9) {
-            currentStation = (byte) (currentStation + 1);
-        }
+        int plus = currentStation +=1;
         if (currentStation == 10) {
             currentStation = 0;
         }
+        setCurrentStation((byte) plus);
         return currentStation;
     }
 
     public byte prev() {
-        if (currentStation >= 0) {
-            currentStation = (byte) (currentStation - 1);
-        }
+        int minus = currentStation -=1;
         if (currentStation == -1) {
             currentStation = 9;
         }
+        setCurrentStation((byte) minus);
         return currentStation;
     }
 
