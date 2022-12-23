@@ -1,3 +1,4 @@
+
 package ru.netology.radio;
 
 public class Radio {
@@ -48,14 +49,14 @@ public class Radio {
         if (newCurrentVolume < 0) {
             return;
         }
-        if (newCurrentVolume > 10) {
+        if (newCurrentVolume > 100) {
             return;
         }
         currentVolume = newCurrentVolume;
     }
 
     public byte increaseVolume() {
-        if (currentVolume < 10) {
+        if (currentVolume < 100) {
             currentVolume = (byte) (currentVolume + 1);
         }
         return currentVolume;
