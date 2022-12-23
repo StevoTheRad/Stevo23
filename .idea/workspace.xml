@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f675039-6f1c-4619-909a-6be4b284b9bd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/radio/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/radio/Radio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +69,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldSetNextStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldNotSetStationAboveMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Radio" />
       <extension name="coverage">
         <pattern>
@@ -78,13 +79,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.radio" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.radio.RadioTest" />
-      <option name="METHOD_NAME" value="shouldSetNextStation" />
+      <option name="METHOD_NAME" value="shouldNotSetStationAboveMax" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldSetNextVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldNotSetStationAboveMax1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Radio" />
       <extension name="coverage">
         <pattern>
@@ -94,13 +95,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.radio" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.radio.RadioTest" />
-      <option name="METHOD_NAME" value="shouldSetNextVolume" />
+      <option name="METHOD_NAME" value="shouldNotSetStationAboveMax1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldSetPrevStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldNotSetStationBelowMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Radio" />
       <extension name="coverage">
         <pattern>
@@ -110,13 +111,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.radio" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.radio.RadioTest" />
-      <option name="METHOD_NAME" value="shouldSetPrevStation" />
+      <option name="METHOD_NAME" value="shouldNotSetStationBelowMin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldSetPrevVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldSet0StationAsNextFor9Station" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Radio" />
       <extension name="coverage">
         <pattern>
@@ -126,7 +127,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.radio" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.radio.RadioTest" />
-      <option name="METHOD_NAME" value="shouldSetPrevVolume" />
+      <option name="METHOD_NAME" value="shouldSet0StationAsNextFor9Station" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,10 +136,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RadioTest" />
-        <item itemvalue="JUnit.RadioTest.shouldSetPrevVolume" />
-        <item itemvalue="JUnit.RadioTest.shouldSetNextVolume" />
-        <item itemvalue="JUnit.RadioTest.shouldSetPrevStation" />
-        <item itemvalue="JUnit.RadioTest.shouldSetNextStation" />
+        <item itemvalue="JUnit.RadioTest.shouldNotSetStationAboveMax" />
+        <item itemvalue="JUnit.RadioTest.shouldSet0StationAsNextFor9Station" />
+        <item itemvalue="JUnit.RadioTest.shouldNotSetStationAboveMax1" />
+        <item itemvalue="JUnit.RadioTest.shouldNotSetStationBelowMin" />
       </list>
     </recent_temporary>
   </component>

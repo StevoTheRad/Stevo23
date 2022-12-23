@@ -2,9 +2,20 @@ package ru.netology.radio;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ru.netology.radio.Radio;
 
 public class RadioTest {
+
+    @Test
+    public void stationsAmountTest() {
+        Radio radio = new Radio((byte) 10);
+        Assertions.assertEquals(10, radio.getStationsAmount());
+    }
+
+    @Test
+    public void stationsAmountTest2() {
+        Radio radio = new Radio();
+        Assertions.assertEquals(10, radio.getStationsAmount());
+    }
 
     @Test
     public void shouldSetStation() {
@@ -122,9 +133,9 @@ public class RadioTest {
     public void shouldSetMaxVolume() {
         Radio radio = new Radio();
 
-        radio.setCurrentVolume((byte) 10);
+        radio.setCurrentVolume((byte) 100);
 
-        int expected = 10;
+        int expected = 100;
         int actual = radio.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
@@ -183,7 +194,7 @@ public class RadioTest {
     @Test
     public void shouldNotSetVolumeAboveMaxVolume() {
         Radio radio = new Radio();
-        radio.setCurrentVolume((byte) 11);
+        radio.setCurrentVolume((byte) 101);
 
         int expected = 0;
         int actual = radio.getCurrentVolume();
@@ -204,13 +215,13 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldNotIncreaseVolumeAboveTenVolume() {
+    public void shouldNotIncreaseVolumeAboveHundredVolume() {
         Radio radio = new Radio();
-        radio.setCurrentVolume((byte) 10);
+        radio.setCurrentVolume((byte) 100);
 
         radio.increaseVolume();
 
-        int expected = 10;
+        int expected = 100;
         int actual = radio.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
