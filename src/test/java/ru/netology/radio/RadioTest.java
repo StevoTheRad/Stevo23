@@ -2,7 +2,6 @@ package ru.netology.radio;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ru.netology.radio.Radio;
 
 public class RadioTest {
 
@@ -16,14 +15,6 @@ public class RadioTest {
     public void stationsAmountTest2() {
         Radio radio = new Radio();
         Assertions.assertEquals(10, radio.getStationsAmount());
-    }
-
-    @Test
-    public void volumeRange() {
-        Radio radio = new Radio((byte) 25, (byte) 75);
-        Assertions.assertEquals(25, radio.getMinVolume());
-        Assertions.assertEquals(75, radio.getMaxVolume());
-        Assertions.assertEquals(25, radio.getCurrentVolume());
     }
 
     @Test
@@ -224,7 +215,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldNotIncreaseVolumeAboveTenVolume() {
+    public void shouldNotIncreaseVolumeAboveHundredVolume() {
         Radio radio = new Radio();
         radio.setCurrentVolume((byte) 100);
 
