@@ -1,24 +1,26 @@
+
 package ru.netology.radio;
 
 public class Radio {
 
-    private byte stationsAmount = 10;
+    private byte stationsAmount = 20;
     private byte currentStation;
     private byte minVolume = 0;
     private byte maxVolume = 100;
     private byte currentVolume = minVolume;
 
+
+    public Radio(byte stationsAmount) {
+        this.stationsAmount = stationsAmount;
+    }
+
     public Radio() {
         System.out.println(stationsAmount);
     }
 
-    public Radio(byte Amount) {
-
-    }
-
     public byte next() {
-        int plus = currentStation +=1;
-        if (currentStation == 10) {
+        int plus = currentStation += 1;
+        if (currentStation == 20) {
             currentStation = 0;
         }
         setCurrentStation((byte) plus);
@@ -26,16 +28,16 @@ public class Radio {
     }
 
     public byte prev() {
-        int minus = currentStation -=1;
+        int minus = currentStation -= 1;
         if (currentStation == -1) {
-            currentStation = 9;
+            currentStation = 19;
         }
         setCurrentStation((byte) minus);
         return currentStation;
     }
 
     public byte increaseVolume() {
-        if (currentVolume < 100) {
+        if (currentVolume < maxVolume) {
             currentVolume = (byte) (currentVolume + 1);
         }
         return currentVolume;
@@ -48,7 +50,7 @@ public class Radio {
         return currentVolume;
     }
 
-    public byte getStationsAmount() {
+    public int getStationsAmount() {
         return stationsAmount;
     }
 
@@ -64,7 +66,7 @@ public class Radio {
         if (newCurrentStation < 0) {
             return;
         }
-        if (newCurrentStation > 9) {
+        if (newCurrentStation > stationsAmount - 1) {
             return;
         }
         currentStation = newCurrentStation;
